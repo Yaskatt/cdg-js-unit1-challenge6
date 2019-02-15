@@ -37,6 +37,14 @@ function answerQuiz1() {
     frag1 = false;
   }
   switch (answer_1) {
+    case 'a':
+      //選択したボタンの判定
+      console.log(`1問目の${answer_1}を選択しました`);
+      //回答結果
+      console.log('不正解です');
+      //現在のスコアを表示
+      console.log(`現在のトータルスコア：${score}`);
+      break;
     case 'b':
       //選択したボタンの判定
       console.log(`1問目の${answer_1}を選択しました`);
@@ -45,7 +53,6 @@ function answerQuiz1() {
       //現在のスコアを表示
       console.log(`現在のトータルスコア：${score}`);
       break;
-    case 'a':
     case 'c':
       //選択したボタンの判定
       console.log(`1問目の${answer_1}を選択しました`);
@@ -54,6 +61,8 @@ function answerQuiz1() {
       //現在のスコアを表示
       console.log(`現在のトータルスコア：${score}`);
       break;
+    default:
+      alert('回答が選択されていません！');
   }
 }
 
@@ -78,6 +87,13 @@ function answerQuiz2() {
       console.log(`現在のトータルスコア：${score}`);
       break;
     case 'b':
+      //選択したボタンの判定
+      console.log(`2問目の${answer_2}を選択しました`);
+      //回答結果
+      console.log('不正解です');
+      //現在のスコアを表示
+      console.log(`現在のトータルスコア：${score}`);
+      break;
     case 'c':
       //選択したボタンの判定
       console.log(`2問目の${answer_2}を選択しました`);
@@ -86,6 +102,8 @@ function answerQuiz2() {
       //現在のスコアを表示
       console.log(`現在のトータルスコア：${score}`);
       break;
+    default:
+      alert('回答が選択されていません！');
   }
 }
 
@@ -101,15 +119,14 @@ function answerQuiz3() {
     frag3 = false;
   }
   switch (answer_3) {
-    case 'c':
+    case 'a':
       //選択したボタンの判定
       console.log(`3問目の${answer_3}を選択しました`);
       //回答結果
-      console.log('正解です');
+      console.log('不正解です');
       //現在のスコアを表示
       console.log(`現在のトータルスコア：${score}`);
       break;
-    case 'a':
     case 'b':
       //選択したボタンの判定
       console.log(`3問目の${answer_3}を選択しました`);
@@ -118,5 +135,15 @@ function answerQuiz3() {
       //現在のスコアを表示
       console.log(`現在のトータルスコア：${score}`);
       break;
+    case 'c':
+      //選択したボタンの判定
+      console.log(`3問目の${answer_3}を選択しました`);
+      //回答結果
+      console.log('正解です');
+      //現在のスコアを表示
+      console.log(`現在のトータルスコア：${score}`);
+      break;
+    default:
+      alert('回答が選択されていません！');
   }
 }
